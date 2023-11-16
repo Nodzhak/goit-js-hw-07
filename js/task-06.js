@@ -39,4 +39,7 @@ createButton.addEventListener("click", () => {
         createBoxes(amount);
       });
 
-destroyButton.addEventListener("click", destroyBoxes);
+destroyButton.addEventListener("click", () =>{
+        const dAmount = parseInt(input.value);
+        destroyBoxes(dAmount);
+      });

@@ -7,6 +7,7 @@ const images = [
     alt: 'Group of Horses Running',},];
 
       const gallery = document.querySelector(".gallery");
+      const fragment = document.createDocumentFragment();
 
         images.forEach(image => {
           const li = document.createElement("li");
@@ -17,8 +18,9 @@ const images = [
 
           li.appendChild(img);
           gallery.appendChild(li);
-        })
+        });
 
+        gallery.appendChild(fragment);
 
 
 
